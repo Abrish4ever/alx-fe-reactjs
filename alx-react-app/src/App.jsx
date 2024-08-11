@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import WelcomeMessage from './component/WelcomeMessage'
+import WelcomeMessage from './components/WelcomeMessage'
 
 function App() {
 
