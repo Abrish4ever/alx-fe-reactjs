@@ -8,6 +8,7 @@ const RegistrationForm = () => {
     password: ''
   });
   
+  const { username, email, password } = formData;
   const handleChange= (e)=> {
     const {name, value }= e.target;
     setFormData(preveState=>({...preveState, [name]: value}));
@@ -29,7 +30,7 @@ const RegistrationForm = () => {
       <input 
         type="text" 
         name="username" 
-        value={formData.username} 
+        value={username} 
         onChange={handleChange} 
       /><br />
 
@@ -37,7 +38,7 @@ const RegistrationForm = () => {
       <input 
         type="email" 
         name="email" 
-        value={formData.email} 
+        value={email} 
         onChange={handleChange}
       /><br />
 
@@ -45,7 +46,7 @@ const RegistrationForm = () => {
       <input 
         type="password" 
         name="password" 
-        value={formData.password} 
+        value={password} 
         onChange={handleChange} 
       /><br />
       <button type="submit">Submit</button>
