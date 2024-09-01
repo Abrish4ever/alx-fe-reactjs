@@ -5,11 +5,10 @@ const RegistrationForm = () => {
   const [formData, setFormData] = useState({
     username: '',
     email: '',
-    password: '',
-    error: ''
+    password: ''
   });
-  
-  const { username, email, password, error} = formData;
+  const [error, setErrors]= useState('');
+  const { username, email, password} = formData;
   const handleChange= (e)=> {
     const {name, value }= e.target;
     setFormData(preveState=>({...preveState, [name]: value}));
