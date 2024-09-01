@@ -2,7 +2,7 @@ import React from 'react';
 import { Formik, Form, Field, ErrorMessage } from 'formik';
 import * as Yup from 'yup';
 
-const RegistrationForm = () => {
+const formikForm = () => {
   const validationSchema = Yup.object({
     username: Yup.string().required('Username is required'),
     email: Yup.string().email('Invalid email address').required('Email is required'),
@@ -46,4 +46,4 @@ const RegistrationForm = () => {
   );
 };
 
-export default RegistrationForm;
+export default formikForm;
