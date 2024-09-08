@@ -569,6 +569,11 @@ video {
   margin-bottom: 1rem;
 }
 
+.my-10 {
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
+}
+
 .h-24 {
   height: 6rem;
 }
@@ -705,8 +710,16 @@ button:focus-visible {
     height: 9rem;
   }
 
+  .sm\:h-28 {
+    height: 7rem;
+  }
+
   .sm\:w-36 {
     width: 9rem;
+  }
+
+  .sm\:w-28 {
+    width: 7rem;
   }
 
   .sm\:max-w-sm {
@@ -717,6 +730,10 @@ button:focus-visible {
     padding: 2rem;
   }
 
+  .sm\:p-6 {
+    padding: 1.5rem;
+  }
+
   .sm\:text-base {
     font-size: 1rem;
     line-height: 1.5rem;
@@ -724,6 +741,39 @@ button:focus-visible {
 
   .sm\:text-xl {
     font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .md\:my-20 {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+  }
+
+  .md\:h-36 {
+    height: 9rem;
+  }
+
+  .md\:w-36 {
+    width: 9rem;
+  }
+
+  .md\:max-w-md {
+    max-width: 28rem;
+  }
+
+  .md\:p-8 {
+    padding: 2rem;
+  }
+
+  .md\:text-2xl {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
+  .md\:text-lg {
+    font-size: 1.125rem;
     line-height: 1.75rem;
   }
 }
