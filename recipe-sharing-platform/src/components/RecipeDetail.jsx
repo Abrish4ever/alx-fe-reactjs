@@ -6,7 +6,7 @@ const RecipeDetail = () => {
   const [recipe, setRecipe] = useState(null);
 
   useEffect(() => {
-    fetch('/data.json')  // Fetch recipe data
+    fetch('./src/data.json')  // Fetch recipe data
       .then((response) => response.json())
       .then((data) => {
         const selectedRecipe = data.find((recipe) => recipe.id === parseInt(id));
