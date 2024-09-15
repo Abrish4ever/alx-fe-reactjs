@@ -11,7 +11,7 @@ const HomePage = () => {
         .catch((error) => console.error('Error fetching data:', error));
     }, []);
   return (
-        <div className="container mx-auto p-4">
+        <div className="container mx-auto p-4 rounded">
             <h1 className="text-2xl font-bold text-center mb-8">Recipes Sharing Plateform</h1>
             <div className="grid grid-col-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
                 {recipes.map((recipe)=> (
