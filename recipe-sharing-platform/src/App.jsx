@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { BrowserRouter as Router, Route, Route } from 'react-router-dom'
 import HomePage from './components/HomePage'
-import { Router, Routes } from 'react-router-dom'
+import RecipeDetail from './components/RecipeDetail'
 
 function App() {
 
