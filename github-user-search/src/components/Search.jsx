@@ -13,7 +13,7 @@ function Search() {
         setLoading(true);
         setError(null);
         try {
-            const userData = await fetchUsers(searchParams);
+            const userData = await fetchUserData(searchParams);
             setUsers(userData);
         } catch (error) {
             setError("No users found with the provided criteria");
